@@ -2,15 +2,17 @@ using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+   
+    
+    public void Anxiety(float anxietyMeter)
     {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+        if (anxietyMeter < 100)
+        {
+            anxietyMeter += Time.deltaTime;
+        }
+        else
+        {
+            anxietyMeter = 100;
+        }
     }
 }
