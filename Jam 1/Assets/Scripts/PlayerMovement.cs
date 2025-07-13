@@ -1,9 +1,10 @@
 using UnityEngine;
-using UnityEngine.InputSystem; 
+using UnityEngine.InputSystem;
 
 public class PlayerMovement : MonoBehaviour
 {
-    public float moveSpeed = 5f; 
+    public GameManager gameManager;
+    public float moveSpeed = 5f;
     private Vector2 currentMovementInput;
     private Rigidbody playerRb;
 
@@ -15,9 +16,9 @@ public class PlayerMovement : MonoBehaviour
     }
     public void OnMove(InputAction.CallbackContext context)
     {
-        
+
         currentMovementInput = context.ReadValue<Vector2>();
-        
+
     }
 
     void Update()
@@ -27,11 +28,17 @@ public class PlayerMovement : MonoBehaviour
         float moveZ = currentMovementInput.y * moveSpeed * Time.deltaTime;
 
         transform.Translate(moveX, 0f, moveZ);
-        
-                         
 
 
-        
-        
+
+
+
+
+
+
+    }
+    void FixedUpdate()
+    {
+        gameManager.Anxiety();
     }
 }

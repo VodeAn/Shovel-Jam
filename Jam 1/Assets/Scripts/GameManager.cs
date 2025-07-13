@@ -1,16 +1,31 @@
+using System;
+using Unity.Multiplayer.Center.Common;
 using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
+    
+    public float anxietyMeter = 0;
+    private float maxAnxiety = 100;
+    
     void Start()
     {
-        
+
     }
 
     // Update is called once per frame
-    void Update()
+    
+    public void Anxiety()
     {
-        
+        if (anxietyMeter < maxAnxiety)
+        {
+            anxietyMeter += Time.deltaTime;
+            Debug.Log("Anxiety increasing" + anxietyMeter);
+        }
+        else
+        {
+            anxietyMeter = 100;
+            Debug.Log("Max Anxiety" + anxietyMeter);
+        }
     }
 }
