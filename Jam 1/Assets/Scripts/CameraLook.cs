@@ -1,10 +1,13 @@
 using UnityEngine;
 using UnityEngine.Animations;
+using UnityEngine.InputSystem;
 
 public class CameraLook : MonoBehaviour
 {
     public float mouseSensitivity = 100f;
     private float xRotation = 0f;
+
+    private Vector2 mouseDelta;
 
     public Transform playerBody;
 
@@ -12,11 +15,15 @@ public class CameraLook : MonoBehaviour
     {
         Cursor.lockState = CursorLockMode.Locked;
     }
+    public void OnLook(InputAction.CallbackContext context)
+    {
+        mouseDelta = context.ReadValue<Vector2>();
+    }
 
     void Update()
     {
-        float mouseX = Input.GetAxis("Mouse X") * mouseSensitivity * Time.deltaTime;
-        float mouseY = Input.GetAxis("Mouse Y") * mouseSensitivity * Time.deltaTime;
+        float mouseX = mouseDelta.x * mouseSensitivity * Time.deltaTime;
+        float mouseY = mouseDelta.y * mouseSensitivity * Time.deltaTime;
 
         xRotation -= mouseY;
         xRotation = Mathf.Clamp(xRotation, -90f, 90f);
