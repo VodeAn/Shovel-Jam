@@ -10,17 +10,37 @@
                     "name": "Move",
                     "type": "Value",
                     "id": "570f544e-28a7-4da7-abdb-834a89d52589",
-                    "expectedControlType": "Vector3",
+                    "expectedControlType": "Vector2",
                     "processors": "NormalizeVector3",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "Look",
+                    "type": "Value",
+                    "id": "1100da36-a239-42b3-9034-38d30c88b73c",
+                    "expectedControlType": "Vector2",
+                    "processors": "",
                     "interactions": "",
                     "initialStateCheck": true
                 }
             ],
             "bindings": [
                 {
-                    "name": "WASD",
-                    "id": "49f97ca7-bede-455a-842f-4a3c18226980",
-                    "path": "3DVector",
+                    "name": "",
+                    "id": "fdf9352e-70b0-4e1e-a7f4-01c72b6a66a6",
+                    "path": "<Mouse>/delta",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Look",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "2D Vector",
+                    "id": "a979fca2-770a-4332-a9dd-0d47576726e9",
+                    "path": "2DVector",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
@@ -30,8 +50,8 @@
                 },
                 {
                     "name": "up",
-                    "id": "502a90f9-ad9b-428d-ac89-6c99e0925626",
-                    "path": "",
+                    "id": "75ab58ca-8403-4cdf-adfd-8db0c17e4bcc",
+                    "path": "<Keyboard>/w",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
@@ -41,8 +61,8 @@
                 },
                 {
                     "name": "down",
-                    "id": "93fbcb2b-40ef-4d09-89f5-68aedbb55b19",
-                    "path": "",
+                    "id": "512cd080-9a53-417e-81d6-0c77762e4575",
+                    "path": "<Keyboard>/s",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
@@ -52,7 +72,7 @@
                 },
                 {
                     "name": "left",
-                    "id": "aefee798-297a-40b6-9be7-ff8c0ac5ce68",
+                    "id": "b4e0a57c-142d-4c50-94f7-301337028c65",
                     "path": "<Keyboard>/a",
                     "interactions": "",
                     "processors": "",
@@ -63,30 +83,8 @@
                 },
                 {
                     "name": "right",
-                    "id": "794650ad-42ff-4e51-8538-0ce6c64db91c",
+                    "id": "2472b477-93bb-486a-89ed-9e3ee48557db",
                     "path": "<Keyboard>/d",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "Move",
-                    "isComposite": false,
-                    "isPartOfComposite": true
-                },
-                {
-                    "name": "forward",
-                    "id": "58ff66d1-cafd-4cf2-bcab-26aa54ed0db7",
-                    "path": "<Keyboard>/w",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "Move",
-                    "isComposite": false,
-                    "isPartOfComposite": true
-                },
-                {
-                    "name": "backward",
-                    "id": "a093b547-ea5e-4bc1-9d09-f27f27419a36",
-                    "path": "<Keyboard>/s",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
