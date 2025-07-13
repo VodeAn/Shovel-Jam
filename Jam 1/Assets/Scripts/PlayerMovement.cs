@@ -3,7 +3,9 @@ using UnityEngine.InputSystem;
 
 public class PlayerMovement : MonoBehaviour
 {
-    public float moveSpeed = 5f; 
+    [SerializeField]private GameManager gameManager;
+    public float moveSpeed = 5f;
+    private float anxietyMeter = 0;
     private Vector2 currentMovementInput;
     private Rigidbody playerRb;
 
@@ -15,8 +17,9 @@ public class PlayerMovement : MonoBehaviour
     }
     public void OnMove(InputAction.CallbackContext context)
     {
-        
+
         currentMovementInput = context.ReadValue<Vector2>();
+        
         
     }
 
@@ -27,6 +30,8 @@ public class PlayerMovement : MonoBehaviour
         float moveZ = currentMovementInput.y * moveSpeed * Time.deltaTime;
 
         transform.Translate(moveX, 0f, moveZ);
+
+        gameManager.Anxiety(anxietyMeter);
         
                          
 
