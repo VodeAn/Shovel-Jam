@@ -97,7 +97,7 @@ public partial class @InputMaster: IInputActionCollection2, IDisposable
                     ""type"": ""Value"",
                     ""id"": ""570f544e-28a7-4da7-abdb-834a89d52589"",
                     ""expectedControlType"": ""Vector2"",
-                    ""processors"": ""NormalizeVector3"",
+                    ""processors"": ""NormalizeVector2,NormalizeVector3"",
                     ""interactions"": """",
                     ""initialStateCheck"": true
                 },
