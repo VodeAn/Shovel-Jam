@@ -4,12 +4,14 @@ using UnityEngine.InputSystem;
 public class PlayerMovement : MonoBehaviour
 {
     public float moveSpeed = 5f; 
-    private Vector2 currentMovementInput; 
+    private Vector2 currentMovementInput;
+    private Rigidbody playerRb;
 
-   
-    void Start()
+
+    void Awake()
     {
-          
+        playerRb = GetComponent<Rigidbody>();
+        playerRb.freezeRotation = true;
     }
     public void OnMove(InputAction.CallbackContext context)
     {
@@ -20,10 +22,16 @@ public class PlayerMovement : MonoBehaviour
 
     void Update()
     {
+
+        float moveX = currentMovementInput.x * moveSpeed * Time.deltaTime;
+        float moveZ = currentMovementInput.y * moveSpeed * Time.deltaTime;
+
+        transform.Translate(moveX, 0f, moveZ);
         
-        transform.Translate(currentMovementInput.x * moveSpeed * Time.deltaTime,0f
-                            ,currentMovementInput.y * moveSpeed * Time.deltaTime
-                            );
+                         
+
+
+        
         
     }
 }
