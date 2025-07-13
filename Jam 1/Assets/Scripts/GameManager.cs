@@ -9,10 +9,12 @@ public class GameManager : MonoBehaviour
         if (anxietyMeter < 100)
         {
             anxietyMeter += Time.deltaTime;
+            Debug.Log("Increasing");
         }
         else
         {
             anxietyMeter = 100;
+            Debug.Log("Max");
         }
     }
 }
