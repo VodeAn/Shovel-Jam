@@ -5,7 +5,7 @@ public class PlayerMovement : MonoBehaviour
 {
     [SerializeField] private GameManager gameManager;
     public float moveSpeed = 5f;
-    private float anxietyMeter = 0;
+    
     private Vector2 currentMovementInput;
     private Rigidbody playerRb;
     private InputMaster inputMaster;
