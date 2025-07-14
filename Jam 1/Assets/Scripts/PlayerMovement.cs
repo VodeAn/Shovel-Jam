@@ -40,7 +40,7 @@ public class PlayerMovement : MonoBehaviour
 
         transform.Translate(moveX, 0f, moveZ);
 
-        gameManager.Anxiety(anxietyMeter);
+        gameManager.Anxiety();
 
     }
     public void OnJump(InputAction.CallbackContext context)
