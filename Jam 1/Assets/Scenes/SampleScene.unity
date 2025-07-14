@@ -354,6 +354,7 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+<<<<<<< Updated upstream
 --- !u!1001 &1626774757
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -420,6 +421,9 @@ PrefabInstance:
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d056f372bac726d439a2333f029a43b0, type: 3}
 --- !u!1 &1655310520
+=======
+--- !u!1 &1576513931
+>>>>>>> Stashed changes
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -427,9 +431,15 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
+<<<<<<< Updated upstream
   - component: {fileID: 1655310523}
   - component: {fileID: 1655310522}
   - component: {fileID: 1655310521}
+=======
+  - component: {fileID: 1576513934}
+  - component: {fileID: 1576513933}
+  - component: {fileID: 1576513932}
+>>>>>>> Stashed changes
   m_Layer: 0
   m_Name: Terrain
   m_TagString: Untagged
@@ -437,13 +447,21 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
   m_IsActive: 1
+<<<<<<< Updated upstream
 --- !u!154 &1655310521
+=======
+--- !u!154 &1576513932
+>>>>>>> Stashed changes
 TerrainCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< Updated upstream
   m_GameObject: {fileID: 1655310520}
+=======
+  m_GameObject: {fileID: 1576513931}
+>>>>>>> Stashed changes
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
@@ -455,18 +473,31 @@ TerrainCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 2
+<<<<<<< Updated upstream
   m_TerrainData: {fileID: 15600000, guid: 1e4a6c47636a058479f1209d5179b8d4, type: 2}
   m_EnableTreeColliders: 1
 --- !u!218 &1655310522
+=======
+  m_TerrainData: {fileID: 15600000, guid: d7efd5bcad428fe448511c0217b96301, type: 2}
+  m_EnableTreeColliders: 1
+--- !u!218 &1576513933
+>>>>>>> Stashed changes
 Terrain:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< Updated upstream
   m_GameObject: {fileID: 1655310520}
   m_Enabled: 1
   serializedVersion: 6
   m_TerrainData: {fileID: 15600000, guid: 1e4a6c47636a058479f1209d5179b8d4, type: 2}
+=======
+  m_GameObject: {fileID: 1576513931}
+  m_Enabled: 1
+  serializedVersion: 6
+  m_TerrainData: {fileID: 15600000, guid: d7efd5bcad428fe448511c0217b96301, type: 2}
+>>>>>>> Stashed changes
   m_TreeDistance: 5000
   m_TreeBillboardDistance: 50
   m_TreeCrossFadeLength: 5
@@ -497,13 +528,21 @@ Terrain:
   m_EnableHeightmapRayTracing: 1
   m_EnableTreesAndDetailsRayTracing: 0
   m_TreeMotionVectorModeOverride: 3
+<<<<<<< Updated upstream
 --- !u!4 &1655310523
+=======
+--- !u!4 &1576513934
+>>>>>>> Stashed changes
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< Updated upstream
   m_GameObject: {fileID: 1655310520}
+=======
+  m_GameObject: {fileID: 1576513931}
+>>>>>>> Stashed changes
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
@@ -521,7 +560,11 @@ Transform:
   m_GameObject: {fileID: 3301450022165502526}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0.99721557, z: -0, w: -0.07457286}
+<<<<<<< Updated upstream
   m_LocalPosition: {x: 10.16, y: 0.9, z: 29.78}
+=======
+  m_LocalPosition: {x: 3.46, y: 0.99, z: 2.81}
+>>>>>>> Stashed changes
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -932,6 +975,10 @@ SceneRoots:
   - {fileID: 832575519}
   - {fileID: 177253906505658682}
   - {fileID: 5513814367025994437}
+<<<<<<< Updated upstream
   - {fileID: 490515402}
   - {fileID: 1626774757}
   - {fileID: 1655310523}
+=======
+  - {fileID: 1576513934}
+>>>>>>> Stashed changes
