@@ -9,6 +9,7 @@ public class PlayerMovement : MonoBehaviour
     private Vector2 currentMovementInput;
     private Rigidbody playerRb;
     private InputMaster inputMaster;
+    
     [SerializeField] private float jumpForce;
     [SerializeField] private float gravityScale;
     [SerializeField] private bool isOnGround = true;
@@ -53,7 +54,14 @@ public class PlayerMovement : MonoBehaviour
     }
     void OnCollisionEnter(Collision collision)
     {
-        isOnGround = true;
+
+        if (collision.gameObject.CompareTag("Ground"))
+        {
+            isOnGround = true;
+        }
+
+        
+
     }
 
 }
